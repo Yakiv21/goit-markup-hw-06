@@ -54,9 +54,15 @@
     <main>
       <!---Герой-->
       <section class="hero">
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            
+            <button data-modal-close>close</button>
+          </div>
+        </div>
         <div class="container-hero">
           <h1 class="hero-title">эффективные решения для вашего бизнеса</h1>
-          <a href="" class="hero-link button link">Заказать услугу</a>
+          <button class="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!--Наши преимущества-->
@@ -431,15 +437,29 @@
         </div>
         <div class="subscription">
           <b class="call">Подпишитесь на рассылку</b>
-            <a href="" class="subscribe button link">
+          
+          <form class="form">
+            <div class="email-form">
+              <label for="email">
+                <input type="email" name="email" id="email" placeholder="E-mail" />
+              </label>
+              <button class="subscribe button">
+
                 <p class="text-subscribe">Подписаться </p> 
-                <svg class="icon-send" width="24px" height="24px">
+                  <svg class="icon-send" width="24px" height="24px">
                     <use href="./images/sprite.svg#icon-send"></use>
-                </svg>
-            </a>
+                  </svg>
+              </button>
+            </div>
+
+          </form>
+          
+
+
         </div>
       </div>
       <p class="copyright container">2020 | Developed by GoIT Students</p>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
