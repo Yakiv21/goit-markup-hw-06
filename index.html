@@ -52,14 +52,41 @@
       </nav>
     </header>
     <main>
+      <!--MODALKA-->
+
+      <div class="backdrop is-hidden" data-modal>   
+        <div class="modal">
+          <p class="text-modal">Оставьте свои данные, мы вам перезвоним</p>
+          <form action="" method="post" class="form">
+            <label name="name" class="form-filed" >
+              <input type="text" name="name" autofocus class="form-input">
+            </label>
+            <label name="telephone" class="form-filed">
+              <input type="tel" name="telephone" class="form-input">
+            </label>
+            <label name="email" class="form-filed">
+              <input type="email" name="phone" class="form-input">
+            </label>
+            <label name="comments" class="form-filed">
+              <textarea name="comments" cols="30" rows="10" placeholder="Комментарий" class="form-input"></textarea>
+            </label>
+            <label name="" class="form-filed">
+              <input type="checkbox">
+              <p class="text-checkbox">Соглашаюсь с рассылкой и принимаю 
+                <a href="" class="link-checkbox">Условия договора</a>  
+              </p>             
+            </label>
+
+            <button type="submit" class="button button-submit">Оставить заявку</button>
+
+            <button class="close" data-modal-close>X</button>
+          </form>
+        </div>
+      </div>
+
       <!---Герой-->
       <section class="hero">
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-            
-            <button data-modal-close>close</button>
-          </div>
-        </div>
+
         <div class="container-hero">
           <h1 class="hero-title">эффективные решения для вашего бизнеса</h1>
           <button class="button" data-modal-open>Заказать услугу</button>

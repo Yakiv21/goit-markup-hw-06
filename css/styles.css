@@ -206,7 +206,101 @@ img {
   color: var(--accent-color);
 }
 
+    /*MODALKA*/
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-modal-icon);
+}
+
+/*.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}*/
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 528px;
+  height: 581px;
+
+  background-color: var(--white-color);
+}
+
+.text-modal {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+
+  margin: 40px 40px 30px 40px;
+}
+
+.form {
+  margin-right: 40px;
+  margin-left: 40px;
+  text-align: center;
+}
+
+.form-filed {
+  display: block;
+  margin-bottom: 28px;
+}
+
+.form-filed:nth-child(4) {
+  margin-bottom: 20px;
+}
+.form-filed:nth-child(5) {
+  margin-bottom: 20px;
+}
+
+.form-input {
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+.text-checkbox {
+  display: inline-block;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primery-text-color);
+
+  margin: 0;
+}
+
+.link-checkbox {
+  color: var(--accent-color);
+  
+}
+
+.button-submit {
+  
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
 /* Hero */
+
 .hero {
   background-color: var(--bg-hero-color);
   background-image: linear-gradient(
@@ -222,31 +316,7 @@ img {
   background-repeat: no-repeat;
 }
 
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--bg-modal-icon);
-}
 
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  min-width: 528px;
-  min-height: 581px;
-
-  background-color: var(--white-color);
-}
 
 .container-hero {
   margin-left: auto;
@@ -543,10 +613,6 @@ img {
   margin-bottom: 21px;
 }
 
-form {
-  width: 358px;
-  height: 50px;
-}
 .email-form {
   display: flex;
   flex-direction: row;
